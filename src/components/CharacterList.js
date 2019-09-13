@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from 'axios';
+import CharacterCard from './CharacterCard';
+// import { tsPropertySignature } from "@babel/types";
 
 export default function CharacterList() {
   // TODO: Add useState to track data from useEffect
@@ -24,7 +26,15 @@ export default function CharacterList() {
       <h2>TODO: `array.map()` over your state here!</h2>
 
       {charList.map((char) => (
-        <div>{char.name}</div>
+        <CharacterCard 
+        image={char.image} 
+        name={char.name} 
+        species={char.species}
+        status={char.status}
+        location={char.location}
+        origin={char.origin}
+        episode={char.episode}
+        />
       ))}
     </section>
   );
