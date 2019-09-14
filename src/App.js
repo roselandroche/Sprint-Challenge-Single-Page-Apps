@@ -1,5 +1,5 @@
 import React from "react";
-// import TabNav from "./components/TabNav.js";
+import TabNav from "./components/TabNav.js";
 import Header from "./components/Header.js";
 import CharacterList from "./components/CharacterList";
 import LocationsList from "./components/LocationsList";
@@ -12,7 +12,7 @@ export default function App() {
     <Router>
       <main>
         <Header />
-        {/* <TabNav /> */}
+        <TabNav />
         <Route path='/characters' component={CharacterList} />
         <Route path='/locations' component={LocationsList} />
         <Route path='/episodes' component={EpisodeList} />
