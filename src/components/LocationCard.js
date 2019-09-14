@@ -13,10 +13,10 @@ const StyledLocationCard = styled.div`
 function LocationCard(props) {
   return (
     <StyledLocationCard>
-      <h1>{props.location.name}</h1>
-      <h2>{props.location.type}</h2>
-      <h2>{props.location.dimension}</h2>
-      <h2>{`Residents:${props.location.residents.length}`}</h2>
+      <h1>{`Name: ${props.location.name}`}</h1>
+      <h2>{`Type: ${props.location.type}`}</h2>
+      <h2>{`Dimension: ${props.location.dimension}`}</h2>
+      <h2>{`Residents: ${props.location.residents.length}`}</h2>
     </StyledLocationCard>
   );
 }

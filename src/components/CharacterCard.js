@@ -6,7 +6,7 @@ const StyledCard = styled.div `
   border-radius: 8px;
   margin: 10px;
   text-align: center;
-  
+  width: 45%;
 `;
 
 function CharacterCard(props) {
@@ -15,9 +15,9 @@ function CharacterCard(props) {
       <img src={props.char.image} alt={`${props.char.name} from Rick and Morty`}/>
       <h1>{props.char.name}</h1>
       <h3>{`${props.char.species} ${props.char.status}`}</h3>
-      <h3>{props.char.location.name}</h3>
-      <h3>{props.char.origin.name}</h3>
-      <h3>{props.char.episode[0]}</h3>
+      <h3>{`Lives on: ${props.char.location.name}`}</h3>
+      <h3>{`Originally from: ${props.char.origin.name}`}</h3>
+      <h3>{`In ${props.char.episode.length} Episode(s)`}</h3>
     </StyledCard>);
 }
 
