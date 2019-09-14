@@ -12,7 +12,7 @@ const StyledCard = styled.div `
 function CharacterCard(props) {
   return (
     <StyledCard className='charCard'>
-      <img src={props.char.image} alt={`Image of ${props.char.name}`}/>
+      <img src={props.char.image} alt={`${props.char.name} from Rick and Morty`}/>
       <h1>{props.char.name}</h1>
       <h3>{`${props.char.species} ${props.char.status}`}</h3>
       <h3>{props.char.location.name}</h3>
